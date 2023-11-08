@@ -70,7 +70,7 @@ body {
 	position: fixed;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	bottom: 0;
 	right: 0;
 	padding: 1em;
@@ -78,14 +78,16 @@ body {
 	width: 100%;
 	background-color: $medium-black;
 	text-align: center;
+	transform: translateX(500px);
+	transition: transform 0.4s;
 	z-index: 100;
 
 	&__item {
 		position: relative;
 		display: block;
-		padding: 2em 0;
+		padding: 1.2em 0;
 		font-family: "Quicksand", sans-serif;
-		font-size: 1.5em;
+		font-size: 1.3em;
 		color: $pure-white;
 		text-decoration: none;
 
@@ -93,4 +95,8 @@ body {
 			color: $main-orange;
 		}
 	}
+}
+
+.show-mobile {
+	transform: translateX(0);
 }
