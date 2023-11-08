@@ -5,8 +5,11 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+
+@use "colors" as *;
+
 .hamburger {
-	padding: 15px 15px;
+	padding: 15px 25px;
 	display: inline-block;
 	cursor: pointer;
 	transition-property: opacity, filter;
@@ -29,7 +32,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-	background-color: #000;
+	background-color: $main-orange;
 }
 
 .hamburger-box {
@@ -48,8 +51,8 @@
 .hamburger-inner::before,
 .hamburger-inner::after {
 	width: 40px;
-	height: 4px;
-	background-color: #000;
+	height: 3px;
+	background-color: $main-orange;
 	border-radius: 4px;
 	position: absolute;
 	transition-property: transform;

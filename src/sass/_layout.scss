@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 html {
 	font-size: 62.5%;
 	// scroll-padding-top: 100px;
@@ -9,4 +11,56 @@ body {
 	// font-family: "Quicksand", sans-serif;
 	font-size: 1.6rem;
 	background-color: #f0f0f0;
+}
+
+//navbar
+.navbar {
+	width: 100%;
+	background-color: $medium-black;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		.logo {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			padding: 1em;
+
+			&__icon {
+				width: 50px;
+				height: 50px;
+			}
+
+			&__name {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-left: 0.3em;
+				height: 100%;
+
+				&-upper,
+				&-lower {
+					font-family: "Quicksand", sans-serif;
+					color: $pure-white;
+				}
+
+				&-upper {
+					font-size: 1.75rem;
+					font-weight: 600;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+				}
+
+				&-lower {
+					font-weight: 300;
+				}
+			}
+		}
+
+		.desktop-nav {
+			display: none;
+		}
+	}
 }
