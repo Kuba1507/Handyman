@@ -4,14 +4,9 @@
 	.header {
 		.wrapper {
 			margin-top: 3em;
-			padding: 0 4em;
 
 			.additional-text {
 				display: inline;
-			}
-
-			.underline {
-				margin: 1.25em 0;
 			}
 		}
 	}
@@ -53,6 +48,36 @@
 
 	.show-mobile {
 		transform: translate(0);
+	}
+
+	.header {
+		min-height: calc(100dvh - 95px);
+		min-height: calc(100vh - 95px);
+
+		.wrapper {
+			margin-top: 6em;
+			width: 60%;
+
+			.main-heading {
+				font-size: 3.5rem;
+			}
+
+			.main-description {
+				font-size: 2rem;
+				line-height: 2em;
+			}
+
+			.underline {
+				margin: 1.5em 0;
+			}
+		}
+
+		.cta-button {
+			bottom: 3.25em;
+			padding: 0.7em 1.4em;
+			font-size: 2.2rem;
+			border-radius: 25px;
+		}
 	}
 }
 

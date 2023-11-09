@@ -182,7 +182,7 @@ body {
 		flex-direction: column;
 		align-items: center;
 		margin-top: 3em;
-		padding: 0 2em;
+		width: 70%;
 		z-index: 5;
 
 		.main-heading,
@@ -191,11 +191,13 @@ body {
 		}
 
 		.main-heading {
+			font-size: 2.8rem;
 			font-weight: 400;
 			color: $pure-white;
 		}
 
 		.main-description {
+			font-size: 1.6rem;
 			font-weight: 200;
 			color: rgb(235, 235, 235);
 			line-height: 1.7em;
@@ -223,7 +225,14 @@ body {
 		background-color: $main-orange;
 		border-radius: 20px;
 		border: none;
+		transition: color 0.3s, background-color 0.3s;
+		cursor: pointer;
 		z-index: 5;
+	}
+
+	.cta-button:hover {
+		color: $main-orange;
+		background-color: black;
 	}
 
 	&__shadow {
