@@ -166,61 +166,66 @@ body {
 .header {
 	position: absolute;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+	justify-content: center;
 	bottom: 0;
-	min-height: calc(100dvh - 82px);
-	min-height: calc(100vh - 82px);
 	background-image: url("../img/header-mobile.jpg");
 	background-size: cover;
 	background-position: 60% 50%;
 
 	.wrapper {
-		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 3em;
+		justify-content: center;
+		min-height: calc(100dvh - 82px);
+		min-height: calc(100vh - 82px);
 		width: 70%;
 		z-index: 5;
 
-		.main-heading,
-		.main-description {
-			text-align: center;
-		}
+		.header-box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			height: 70%;
 
-		.main-heading {
-			font-size: 2.8rem;
-			font-weight: 400;
-			color: $pure-white;
-		}
+			.main-heading,
+			.main-description {
+				text-align: center;
+			}
 
-		.main-description {
-			font-size: 1.6rem;
-			font-weight: 200;
-			color: rgb(235, 235, 235);
-			line-height: 1.7em;
-		}
+			.main-heading {
+				font-size: 2.8rem;
+				font-weight: 400;
+				color: $pure-white;
+			}
 
-		.additional-text {
-			display: none;
-		}
+			.main-description {
+				font-size: 1.6rem;
+				font-weight: 200;
+				color: rgb(235, 235, 235);
+				line-height: 1.7em;
+			}
 
-		.underline {
-			display: block;
-			margin: 1em 0;
-			width: 40%;
-			height: 2px;
-			background-color: $main-orange;
+			.additional-text {
+				display: none;
+			}
+
+			.underline {
+				display: block;
+				margin: 1em 0;
+				width: 40%;
+				height: 2px;
+				background-color: $main-orange;
+			}
 		}
 	}
 
 	.cta-button {
-		position: absolute;
-		bottom: 2.3em;
+		margin-top: 1.5em;
 		padding: 0.6em 1.2em;
 		font-size: 1.8rem;
+		width: 10em;
 		font-weight: bold;
 		background-color: $main-orange;
 		border-radius: 20px;
@@ -241,6 +246,6 @@ body {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.65);
 	}
 }
