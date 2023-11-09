@@ -84,30 +84,37 @@
 		display: none;
 	}
 
-	// .header {
-	// 	align-items: flex-end;
-	// 	background-image: url("../img/header-desktop.jpg");
-	// 	background-position: 50% 50%;
+	.header {
+		background-image: url("../img/header-desktop.jpg");
+		justify-content: flex-end;
 
-	// 	.wrapper {
-	// 		align-items: flex-end;
-	// 		margin: 0 auto;
-	// 		margin-top: 6em;
-	// 		width: min(100%, 1200px);
-	// 		padding-left: 30em;
-	// 		padding-right: 2em;
+		.wrapper {
+			align-items: flex-end;
+			margin: 0 auto;
+			width: min(100%, 1200px);
 
-	// 		.main-heading,
-	// 		.main-description {
-	// 			text-align: right;
-	// 		}
+			.header-box {
+				align-items: flex-end;
+				padding: 0 1.5em 0 30em;
+				height: 50%;
 
-	// 		.main-heading {
-	// 			font-size: 4.5rem;
-	// 		}
-	// 	}
+				.main-heading,
+				.main-description {
+					text-align: right;
+				}
 
-	// 	// .cta-button {
-	// 	// }
-	// }
+				.main-heading {
+					font-size: 4.5rem;
+				}
+
+				.underline {
+					width: 30%;
+				}
+			}
+
+			.cta-button {
+				border-radius: 30px;
+			}
+		}
+	}
 }

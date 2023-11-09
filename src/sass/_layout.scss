@@ -192,6 +192,7 @@ body {
 			.main-heading,
 			.main-description {
 				text-align: center;
+				user-select: none;
 			}
 
 			.main-heading {
@@ -215,19 +216,19 @@ body {
 				background-color: $main-orange;
 			}
 		}
-	}
 
-	.cta-button {
-		padding: 0.6em 1.2em;
-		font-size: 1.8rem;
-		width: 10em;
-		font-weight: bold;
-		background-color: $main-orange;
-		border-radius: 20px;
-		border: none;
-		transition: color 0.3s, background-color 0.3s;
-		cursor: pointer;
-		z-index: 5;
+		.cta-button {
+			padding: 0.6em 1.2em;
+			font-size: 1.8rem;
+			width: 10em;
+			font-weight: bold;
+			background-color: $main-orange;
+			border-radius: 20px;
+			border: none;
+			transition: color 0.3s, background-color 0.3s;
+			cursor: pointer;
+			z-index: 5;
+		}
 	}
 
 	.cta-button:hover {
