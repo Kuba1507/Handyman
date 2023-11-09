@@ -13,6 +13,10 @@ body {
 	background-color: #f0f0f0;
 }
 
+.disable-scroll {
+	overflow-y: hidden;
+}
+
 //navbar
 .navbar {
 	position: fixed;
@@ -164,11 +168,13 @@ body {
 //header
 
 .header {
-	position: absolute;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	bottom: 0;
 	background-image: url("../img/header-mobile.jpg");
+	min-height: 100vh;
+	min-height: 100dvh;
 	background-size: cover;
 	background-position: 60% 50%;
 
@@ -177,8 +183,8 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		min-height: calc(100dvh - 82px);
-		min-height: calc(100vh - 82px);
+		min-height: 100vh;
+		min-height: 100dvh;
 		width: 70%;
 		z-index: 5;
 
@@ -187,6 +193,7 @@ body {
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
+			margin-top: 5em;
 			height: 70%;
 
 			.main-heading,
@@ -214,6 +221,10 @@ body {
 				width: 40%;
 				height: 2px;
 				background-color: $main-orange;
+			}
+
+			.aditional-text {
+				display: none;
 			}
 		}
 
@@ -243,5 +254,36 @@ body {
 		bottom: 0;
 		left: 0;
 		background-color: rgba(0, 0, 0, 0.65);
+	}
+}
+
+//main
+
+main {
+	.section-title {
+		position: relative;
+		margin-left: 0.5em;
+		font-size: 2.8rem;
+		font-weight: 500;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: -15px;
+			height: 100%;
+			width: 3px;
+			background-color: $main-orange;
+		}
+	}
+
+	.section {
+		padding: 2em 1.5em;
+	}
+
+	.aboutus {
+		overflow: hidden;
+		.wrapper {
+		}
 	}
 }
