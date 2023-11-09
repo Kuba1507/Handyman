@@ -132,10 +132,9 @@ body {
 	justify-content: space-around;
 	bottom: 0;
 	right: 0;
-	padding: 1em;
 	height: calc(100vh - 82px);
 	width: 100%;
-	background-color: $medium-black;
+	background-color: #2d3137;
 	text-align: center;
 	transform: translateX(750px);
 	transition: transform 0.4s;
@@ -149,6 +148,7 @@ body {
 		font-size: 1.3em;
 		color: $pure-white;
 		text-decoration: none;
+		background-color: $medium-black;
 		transition: color 0.4s;
 
 		&:hover {
