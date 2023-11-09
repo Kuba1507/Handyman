@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 @media (min-width: 768px) {
 	.navbar {
 		.wrapper {
@@ -24,7 +26,7 @@
 
 	.mobile-nav {
 		height: calc(100vh - 95px);
-		transform: translateX(900px);
+		transform: translateX(1000px);
 
 		&__item {
 			padding: 1.5em 0;
@@ -34,5 +36,23 @@
 
 	.show-mobile {
 		transform: translate(0);
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar {
+		.wrapper {
+			align-items: center;
+			margin: 0 auto;
+			width: min(100%, 1200px);
+
+			.desktop-nav {
+				display: inline-block;
+			}
+		}
+	}
+
+	.mobile-nav {
+		display: none;
 	}
 }

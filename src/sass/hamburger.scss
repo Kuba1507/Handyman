@@ -100,3 +100,9 @@
 		padding: 15px 35px;
 	}
 }
+
+@media (min-width: 992px) {
+	.hamburger {
+		display: none;
+	}
+}
