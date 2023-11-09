@@ -1,5 +1,18 @@
 @use "colors" as *;
 
+@media (min-height: 660px) {
+	.header {
+		.wrapper {
+			margin-top: 4em;
+			padding: 0 4em;
+
+			.underline {
+				margin: 1.25em 0;
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.navbar {
 		.wrapper {
