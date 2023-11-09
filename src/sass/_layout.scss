@@ -201,6 +201,10 @@ body {
 			line-height: 1.7em;
 		}
 
+		.additional-text {
+			display: none;
+		}
+
 		.underline {
 			display: block;
 			margin: 1em 0;
@@ -212,7 +216,7 @@ body {
 
 	.cta-button {
 		position: absolute;
-		bottom: 2.5em;
+		bottom: 2.3em;
 		padding: 0.6em 1.2em;
 		font-size: 1.8rem;
 		font-weight: bold;
