@@ -278,12 +278,43 @@ main {
 	}
 
 	.section {
-		padding: 2em 1.5em;
+		padding: 3em 1.5em;
 	}
 
 	.aboutus {
 		overflow: hidden;
+
 		.wrapper {
+			.aboutus-box {
+				.aboutus-images {
+					display: flex;
+					justify-content: center;
+					margin-top: 3em;
+
+					&__image--first {
+						display: none;
+					}
+
+					&__image--second {
+						width: 80%;
+						max-width: 300px;
+						border-radius: 8px;
+						box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+							rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+					}
+				}
+
+				.aboutus-description {
+					margin-top: 3em;
+					padding: 0 2em;
+
+					p {
+						margin-top: 1em;
+						text-align: center;
+						line-height: 1.5em;
+					}
+				}
+			}
 		}
 	}
 }
