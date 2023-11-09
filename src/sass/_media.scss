@@ -91,6 +91,7 @@
 		.wrapper {
 			align-items: flex-end;
 			margin: 0 auto;
+			padding-bottom: 8em;
 			width: min(100%, 1200px);
 
 			.header-box {
@@ -106,13 +107,10 @@
 				.main-heading {
 					font-size: 4.5rem;
 				}
-
-				.underline {
-					width: 30%;
-				}
 			}
 
 			.cta-button {
+				margin-top: 3em;
 				border-radius: 30px;
 			}
 		}
