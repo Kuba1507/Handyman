@@ -38,35 +38,33 @@
 		transform: translate(0);
 	}
 
-	// .header {
-	// 	min-height: calc(100dvh - 95px);
-	// 	min-height: calc(100vh - 95px);
+	.header {
+		.wrapper {
+			min-height: calc(100dvh - 95px);
+			min-height: calc(100vh - 95px);
 
-	// 	.wrapper {
-	// 		margin-top: 6em;
-	// 		min-width: 60%;
+			.header-box {
+				.main-heading {
+					font-size: 3.8rem;
+				}
 
-	// 		.main-heading {
-	// 			font-size: 3.5rem;
-	// 		}
+				.main-description {
+					font-size: 2.2rem;
+					line-height: 1.9em;
+				}
 
-	// 		.main-description {
-	// 			font-size: 2rem;
-	// 			line-height: 2em;
-	// 		}
+				.underline {
+					margin: 1.5em 0;
+				}
+			}
 
-	// 		.underline {
-	// 			margin: 1.5em 0;
-	// 		}
-	// 	}
-
-	// 	.cta-button {
-	// 		margin-top: 12em;
-	// 		padding: 0.7em 1.4em;
-	// 		font-size: 2.2rem;
-	// 		border-radius: 25px;
-	// 	}
-	// }
+			.cta-button {
+				padding: 0.8em 1.6em;
+				font-size: 2.2rem;
+				border-radius: 25px;
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
