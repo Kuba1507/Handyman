@@ -210,10 +210,6 @@
 			font-size: 3.4rem;
 		}
 
-		.section {
-			padding: 2em;
-		}
-
 		.aboutus {
 			.wrapper {
 				.aboutus-box {
@@ -244,9 +240,11 @@
 
 				.advantages-container {
 					.advantage-box {
+						position: relative;
 						flex: 1 0 23%;
 						margin: 1%;
 						padding: 1.5em 1em;
+						z-index: 10;
 					}
 				}
 			}
