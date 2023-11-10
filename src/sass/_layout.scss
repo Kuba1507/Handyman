@@ -10,7 +10,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	// font-family: "Quicksand", sans-serif;
 	font-size: 1.6rem;
-	background-color: #f0f0f0;
+	background-color: $body-bg;
 }
 
 .disable-scroll {
@@ -136,7 +136,8 @@ body {
 	justify-content: space-around;
 	bottom: 0;
 	right: 0;
-	height: calc(100vh - 82px);
+	min-height: calc(100vh - 82px);
+	min-height: calc(100dvh - 82px);
 	width: 100%;
 	background-color: #2d3137;
 	text-align: center;
@@ -182,10 +183,7 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		// gap: 4em;
 		margin-top: 4em;
-		// min-height: 100vh;
-		// min-height: 100dvh;
 		width: 75%;
 		z-index: 5;
 
@@ -194,8 +192,6 @@ body {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			// margin-top: 5em;
-			// height: 100%;
 
 			.main-heading,
 			.main-description {
@@ -315,6 +311,50 @@ main {
 						margin-top: 1em;
 						text-align: center;
 						line-height: 1.5em;
+					}
+				}
+			}
+		}
+	}
+
+	.advantages {
+		margin-top: 1.5em;
+		background-image: url("../img/gradient-bg.jpg");
+		background-size: cover;
+
+		.wrapper {
+			.advantages-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.advantage-box {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding: 1.5em;
+					flex: 1;
+					max-width: 300px;
+
+					&__advantage {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						width: 100px;
+						height: 100px;
+						padding: 1.25em;
+						background-color: $light-orange;
+						border-radius: 50%;
+
+						&-text {
+							margin-top: 0.5em;
+							color: $pure-white;
+							font-weight: 200;
+							font-size: 1.8rem;
+							text-align: center;
+						}
 					}
 				}
 			}

@@ -4,7 +4,7 @@
 	.navbar {
 		.wrapper {
 			.logo {
-				padding: 1.25em;
+				padding: 1em;
 
 				&__icon {
 					width: 55px;
@@ -105,7 +105,7 @@
 							bottom: 0;
 							right: 0;
 							height: 300px;
-							border: 20px solid $pure-white;
+							border: 20px solid $body-bg;
 						}
 
 						&__image--second {
@@ -127,6 +127,24 @@
 							font-size: 2rem;
 							line-height: 1.8em;
 						}
+					}
+				}
+			}
+		}
+
+		.advantages {
+			.wrapper {
+				margin: 0 auto;
+				min-width: (100%, 1200px);
+
+				.advantages-container {
+					flex-direction: row;
+					flex-wrap: wrap;
+
+					.advantage-box {
+						flex: 1 0 48%;
+						margin: 1%;
+						padding: 1.5em 2em;
 					}
 				}
 			}
@@ -192,6 +210,10 @@
 			font-size: 3.4rem;
 		}
 
+		.section {
+			padding: 2em;
+		}
+
 		.aboutus {
 			.wrapper {
 				.aboutus-box {
@@ -210,6 +232,21 @@
 							margin-top: 1.25em;
 							text-align: left;
 						}
+					}
+				}
+			}
+		}
+
+		.advantages {
+			.wrapper {
+				margin: 0 auto;
+				min-width: (100%, 1200px);
+
+				.advantages-container {
+					.advantage-box {
+						flex: 1 0 23%;
+						margin: 1%;
+						padding: 1.5em 1em;
 					}
 				}
 			}
