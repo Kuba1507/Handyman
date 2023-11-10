@@ -40,8 +40,8 @@
 
 	.header {
 		.wrapper {
-			min-height: calc(100dvh - 95px);
-			min-height: calc(100vh - 95px);
+			gap: 8em;
+			width: 65%;
 
 			.header-box {
 				.main-heading {
@@ -159,11 +159,11 @@
 			align-items: flex-end;
 			margin: 0 auto;
 			width: min(100%, 1200px);
+			gap: 0;
 
 			.header-box {
 				align-items: flex-end;
 				padding: 0 1.5em 0 30em;
-				height: 50%;
 
 				.main-heading,
 				.main-description {
@@ -171,7 +171,11 @@
 				}
 
 				.main-heading {
-					font-size: 4.5rem;
+					font-size: 4.2rem;
+				}
+
+				.main-description {
+					font-size: 2rem;
 				}
 			}
 

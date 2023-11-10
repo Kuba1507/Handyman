@@ -171,7 +171,6 @@ body {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	bottom: 0;
 	background-image: url("../img/header-mobile.jpg");
 	min-height: 100vh;
 	min-height: 100dvh;
@@ -183,18 +182,20 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		min-height: 100vh;
-		min-height: 100dvh;
-		width: 70%;
+		// gap: 4em;
+		margin-top: 4em;
+		// min-height: 100vh;
+		// min-height: 100dvh;
+		width: 75%;
 		z-index: 5;
 
 		.header-box {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			justify-content: flex-start;
-			margin-top: 5em;
-			height: 70%;
+			justify-content: center;
+			// margin-top: 5em;
+			// height: 100%;
 
 			.main-heading,
 			.main-description {
@@ -218,7 +219,7 @@ body {
 			.underline {
 				display: block;
 				margin: 1em 0;
-				width: 40%;
+				width: 50%;
 				height: 2px;
 				background-color: $main-orange;
 			}
@@ -229,6 +230,8 @@ body {
 		}
 
 		.cta-button {
+			display: block;
+			margin-top: 6em;
 			padding: 0.6em 1.2em;
 			font-size: 1.8rem;
 			width: 10em;
