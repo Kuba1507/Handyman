@@ -360,4 +360,72 @@ main {
 			}
 		}
 	}
+
+	.offers {
+		.wrapper {
+			margin: 0 auto;
+			width: min(100%, 1200px);
+
+			.offers-box {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-top: 4em;
+
+				&__card {
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+					margin: 2em 0.5em;
+					width: 220px;
+					height: 320px;
+					background-image: url("../img/offers-kitchen.jpg");
+					background-size: cover;
+					background-position: center;
+					border-radius: 12px;
+
+					&--first {
+
+					}
+
+					&--second {
+						
+					}
+
+					&-menu {
+						position: relative;
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+						width: 100%;
+						height: 20%;
+						background-color: rgba(0, 0, 0, 0.75);
+						border-radius: 0 0 12px 12px;
+
+						&::after {
+							content: "";
+							position: absolute;
+							top: 0;
+							width: 100%;
+							height: 2px;
+							background-color: $main-orange;
+						}
+
+						&-title {
+							color: $pure-white;
+							font-size: 2.5rem;
+							font-weight: 200;
+						}
+
+						&-arrow {
+							width: 40px;
+							height: 40px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
 }
