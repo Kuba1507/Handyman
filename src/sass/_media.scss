@@ -188,6 +188,20 @@
 				}
 			}
 		}
+
+		.price-list {
+			.subsection-title {
+				font-size: 2.6rem;
+			}
+
+			.wrapper {
+				.price-box {
+					&__service {
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -340,6 +354,32 @@
 
 					&-number {
 						font-size: 2.6rem;
+					}
+				}
+			}
+		}
+
+		.price-list {
+			.subsection-title {
+				margin-bottom: 1em;
+			}
+
+			.wrapper {
+				margin: 0 auto;
+				width: min(100%, 1200px);
+
+				.underline {
+					margin: 6em auto;
+				}
+
+				.price-box {
+					&-info {
+						font-size: 1.65rem;
+					}
+
+					&__service {
+						padding: 0.5em;
+						font-size: 1.8rem;
 					}
 				}
 			}
