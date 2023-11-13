@@ -380,17 +380,32 @@ main {
 					margin: 2em 0.5em;
 					width: 220px;
 					height: 320px;
-					background-image: url("../img/offers-kitchen.jpg");
 					background-size: cover;
 					background-position: center;
 					border-radius: 12px;
 
 					&--first {
-
+						background-image: url("../img/offers-kitchen.jpg");
 					}
 
 					&--second {
-						
+						background-image: url("../img/offers-bathroom.jpg");
+					}
+
+					&--third {
+						background-image: url("../img/painting.jpg");
+					}
+
+					&--fourth {
+						background-image: url("/dist/img/hydraulic.jpg");
+					}
+
+					&--fifth {
+						background-image: url("/dist/img/electrician.jpg");
+					}
+
+					&--sixth {
+						background-image: url("/dist/img/handyman.jpg");
 					}
 
 					&-menu {
@@ -414,7 +429,7 @@ main {
 
 						&-title {
 							color: $pure-white;
-							font-size: 2.5rem;
+							font-size: 2.3rem;
 							font-weight: 200;
 						}
 
