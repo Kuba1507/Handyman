@@ -459,4 +459,32 @@
 			}
 		}
 	}
+
+	.footer {
+		&__desktop,
+		&__mobile {
+			margin: 0;
+			width: inherit;
+		}
+
+		&__desktop {
+			display: flex;
+		}
+
+		&__mobile {
+			display: flex;
+			align-items: center;
+
+			&-company,
+			&-author {
+				padding: 0.5em 4em;
+				font-size: 1.8rem;
+				color: rgb(37, 37, 37);
+			}
+
+			&-author {
+				background-color: transparent;
+			}
+		}
+	}
 }

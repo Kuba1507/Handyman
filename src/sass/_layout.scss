@@ -693,4 +693,47 @@ main {
 			}
 		}
 	}
+
+	.google-map {
+		margin: 0 auto;
+		width: min(100%, 2500px);
+	}
+}
+
+//footer
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: $yellow;
+
+	&__desktop,
+	&__mobile {
+		margin: 0 auto;
+		width: min(100%, 1200px);
+	}
+
+	&__desktop {
+		display: none;
+	}
+
+	&__mobile {
+		text-align: center;
+
+		&-company {
+			padding: 1em;
+			font-size: 1.8rem;
+			font-weight: 400;
+			line-height: 1.5em;
+			color: rgb(38, 38, 38);
+		}
+
+		&-author {
+			padding: 0.75em 1em;
+			background-color: rgb(29, 29, 29);
+			color: $yellow;
+		}
+	}
 }
