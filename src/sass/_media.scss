@@ -468,16 +468,50 @@
 		}
 
 		&__desktop {
+			position: relative;
 			display: flex;
+			background-image: url("../img/footer-bg.jpg");
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+
+			.wrapper {
+				margin: 0 auto;
+				width: min(100%, 1200px);
+				z-index: 50;
+
+				.footer__desktop-logo {
+					display: flex;
+					padding: 1em;
+					color: $pure-white;
+
+					&-icon {
+						width: 100px;
+						height: 100px;
+					}
+				}
+			}
+
+			&-shadow {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 0.65);
+			}
 		}
 
 		&__mobile {
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
+			margin: 0 auto;
+			width: min(100%, 1200px);
 
 			&-company,
 			&-author {
-				padding: 0.5em 4em;
+				padding: 0.5em 0;
 				font-size: 1.8rem;
 				color: rgb(37, 37, 37);
 			}
