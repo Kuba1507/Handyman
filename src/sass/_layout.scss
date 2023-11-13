@@ -452,6 +452,7 @@ main {
 		background-image: url("/dist/img/poziomica.jpg");
 		background-size: cover;
 		background-position: center;
+		background-attachment: fixed;
 
 		.wrapper {
 			display: flex;

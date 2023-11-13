@@ -164,9 +164,28 @@
 		}
 
 		.questions {
-
 			.wrapper {
 				flex-direction: row;
+
+				.questions__text {
+					padding-right: 1.5em;
+					width: 60%;
+					text-align: left;
+
+					&-heading {
+						font-size: 3.5rem;
+					}
+
+					&-subheading {
+						padding: 0;
+						font-size: 2rem;
+					}
+				}
+
+				.question__call {
+					margin-top: 0;
+					width: 40%;
+				}
 			}
 		}
 	}
@@ -285,6 +304,42 @@
 
 					&__card:hover {
 						transform: scale(1.1);
+					}
+				}
+			}
+		}
+
+		.questions {
+			.wrapper {
+				margin: 0 auto;
+				width: min(100%, 1200px);
+				justify-content: space-around;
+
+				.questions__text {
+					&-heading {
+						font-size: 4rem;
+						width: 70%;
+					}
+
+					&-subheading {
+						font-size: 2.5rem;
+					}
+				}
+
+				.question__call {
+					width: 30%;
+
+					svg {
+						width: 70px;
+						height: 70px;
+					}
+
+					&-text {
+						font-size: 2.3rem;
+					}
+
+					&-number {
+						font-size: 2.6rem;
 					}
 				}
 			}
