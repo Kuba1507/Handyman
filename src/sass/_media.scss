@@ -202,6 +202,38 @@
 				}
 			}
 		}
+
+		.contact {
+			.wrapper {
+				.contact-box {
+					flex-direction: row;
+					align-items: flex-start;
+
+					&__element {
+						flex: 1;
+
+						&-title,
+						&-description {
+							padding: 0 1.5em;
+						}
+					}
+
+					&__element {
+						&--phone {
+							order: 2;
+						}
+
+						&--mail {
+							order: 1;
+						}
+
+						&--address {
+							order: 3;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -382,6 +414,21 @@
 						font-size: 1.8rem;
 					}
 				}
+			}
+
+			.bricks-decoration {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0.05;
+				display: block;
+			}
+		}
+
+		.contact {
+			.wrapper {
+				margin: 0 auto;
+				width: min(100%, 1200px);
 			}
 		}
 	}

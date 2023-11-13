@@ -530,6 +530,8 @@ main {
 	}
 
 	.price-list {
+		position: relative;
+
 		.section-title {
 			margin-bottom: 2em;
 		}
@@ -571,7 +573,77 @@ main {
 					}
 
 					&-price {
+						margin-left: 1em;
 						text-align: right;
+					}
+				}
+			}
+		}
+
+		.bricks-decoration {
+			display: none;
+		}
+	}
+
+	.contact {
+		background-image: url("../img/gradient-bg.jpg");
+		background-size: cover;
+
+		.wrapper {
+			.section-title {
+				color: $pure-white;
+			}
+
+			.contact-box {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-top: 4em;
+
+				&__element {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-bottom: 4em;
+
+					&-icon {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 110px;
+						height: 110px;
+						background-color: $grey;
+						border-radius: 50%;
+						border: 7px solid $pure-white;
+
+						&-img {
+							width: 60px;
+							height: 60px;
+						}
+
+						.pin {
+							width: 70px;
+							height: 70px;
+						}
+					}
+
+					&-title,
+					&-description {
+						color: $pure-white;
+						text-align: center;
+					}
+
+					&-title {
+						margin-top: 0.75em;
+						font-size: 2.2rem;
+						font-weight: 400;
+					}
+
+					&-description {
+						margin-top: 0.25em;
+						font-size: 1.8rem;
+						font-weight: 300;
 					}
 				}
 			}
