@@ -476,7 +476,11 @@
 			width: 100%;
 
 			.wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 				margin: 0 auto;
+				padding: 2em 0 10em 0;
 				width: min(100%, 1200px);
 				z-index: 50;
 
@@ -489,6 +493,49 @@
 						width: 100px;
 						height: 100px;
 					}
+				}
+
+				.footer__desktop-logo-description {
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					font-family: "Quicksand", sans-serif;
+
+					.company-name {
+						font-size: 3rem;
+						font-weight: 600;
+						letter-spacing: 3px;
+					}
+
+					.company-owner {
+						font-size: 2rem;
+						margin-bottom: 0.5em;
+					}
+
+					.company-service {
+						font-family: "Montserrat", sans-serif;
+						color: rgb(116, 116, 116);
+					}
+				}
+
+				.footer__desktop-description {
+					&-text {
+						text-align: center;
+						font-size: 1.8rem;
+						color: $pure-white;
+
+						span {
+							font-weight: bold;
+						}
+					}
+				}
+
+				.underline {
+					margin: 2em 0;
+					height: 2px;
+					width: 40%;
+					background-color: rgb(195, 195, 195);
 				}
 			}
 
