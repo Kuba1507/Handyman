@@ -15,6 +15,14 @@ const closeNav = () => {
 	body.classList.remove("disable-scroll");
 };
 
+const scrollToOffers = () => {
+	const offersSection = document.getElementById("offers");
+
+	if (offersSection) {
+		offersSection.scrollIntoView({ behavior: "smooth" });
+	}
+};
+
 burgerBtn.addEventListener("click", handleNav);
 mobileNavItems.forEach((item) => {
 	item.addEventListener("click", closeNav);
