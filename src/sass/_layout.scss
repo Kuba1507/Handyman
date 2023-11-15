@@ -403,15 +403,15 @@ main {
 					}
 
 					&--fourth {
-						background-image: url("/dist/img/hydraulic.jpg");
+						background-image: url("../img/hydraulic.jpg");
 					}
 
 					&--fifth {
-						background-image: url("/dist/img/electrician.jpg");
+						background-image: url("../img/electrician.jpg");
 					}
 
 					&--sixth {
-						background-image: url("/dist/img/handyman.jpg");
+						background-image: url("../img/handyman.jpg");
 					}
 
 					&-menu {
@@ -455,7 +455,7 @@ main {
 		position: relative;
 		justify-content: center;
 		align-items: center;
-		background-image: url("/dist/img/poziomica.jpg");
+		background-image: url("../img/poziomica.jpg");
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
