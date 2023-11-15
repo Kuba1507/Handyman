@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Quicksand:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="dist/css/hamburger.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
@@ -50,9 +51,10 @@
     <header class="header">
         <div class="wrapper">
             <div class="header-box">
-                <h1 class="main-heading">Twoje wnętrze, moja pasja</h1>
-                <div class="underline"></div>
-                <p class="main-description">Nasza pasja to tworzenie niepowtarzalnych wnętrz. W każdym projekcie
+                <h1 class="main-heading" data-aos="zoom-in">Twoje wnętrze, moja pasja</h1>
+                <div class="underline" data-aos="zoom-in"></div>
+                <p class="main-description" data-aos="zoom-in">Nasza pasja to tworzenie niepowtarzalnych wnętrz. W
+                    każdym projekcie
                     skupiamy się na doskonałej jakości i dbałości o detale, ponieważ wiemy, że to one nadają charakter
                     każdemu domowi.
                     <span class="aditional-text">
@@ -61,22 +63,25 @@
                     </span>
                 </p>
             </div>
-            <button class="cta-button" onclick="scrollToOffers()">Zobacz ofertę</button>
+            <button class="cta-button" onclick="scrollToOffers()" data-aos="zoom-in">Zobacz ofertę</button>
         </div>
         <div class="header__shadow"></div>
     </header>
     <main>
         <section class="section aboutus" id="aboutus">
             <div class="wrapper">
-                <h2 class="section-title">O firmie</h2>
+                <h2 class="section-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">O
+                    firmie</h2>
                 <div class="aboutus-box">
-                    <div class="aboutus-images">
+                    <div class="aboutus-images" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <img src="dist/img/bathroom2-as.jpg" alt="Wykończona i wyłożona płytkami łazienka"
                             class="aboutus-images__image aboutus-images__image--second">
                         <img src="dist/img/bathroom-as.jpg" alt="Wykończona i wyłożona płytkami łazienka"
                             class="aboutus-images__image aboutus-images__image--first">
                     </div>
-                    <div class="aboutus-description">
+                    <div class="aboutus-description" data-aos="fade-left" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <p>Jestem doświadczonym specjalistą w dziedzinie remontów i budowy, świadczącym usługi na
                             terenie
                             Starachowic i okolic. </p>
@@ -124,7 +129,7 @@
         <section class="section offers" id="offers">
             <div class="wrapper">
                 <h2 class="section-title">Oferta</h2>
-                <div class="offers-box">
+                <div class="offers-box" data-aos="fade-up">
                     <div class="offers-box__card offers-box__card--first">
                         <div class="offers-box__card-menu">
                             <p class="offers-box__card-menu-title">Kuchnie</p>
@@ -268,21 +273,21 @@
             <div class="wrapper">
                 <h2 class="section-title">Kontakt</h2>
                 <div class="contact-box">
-                    <div class="contact-box__element contact-box__element--phone">
+                    <div class="contact-box__element contact-box__element--phone" data-aos="zoom-out-down">
                         <div class="contact-box__element-icon">
                             <img src="dist/img/phone.svg" alt="Ikona telefonu" class="contact-box__element-icon-img">
                         </div>
                         <p class="contact-box__element-title">Telefon</p>
                         <p class="contact-box__element-description">500 600 700</p>
                     </div>
-                    <div class="contact-box__element contact-box__element--mail">
+                    <div class="contact-box__element contact-box__element--mail" data-aos="zoom-out-right">
                         <div class="contact-box__element-icon">
                             <img src="dist/img/email.svg" alt="Ikona telefonu" class="contact-box__element-icon-img">
                         </div>
                         <p class="contact-box__element-title">e-mail</p>
                         <p class="contact-box__element-description">mail@mail.com</p>
                     </div>
-                    <div class="contact-box__element contact-box__element--address">
+                    <div class="contact-box__element contact-box__element--address" data-aos="zoom-out-left">
                         <div class="contact-box__element-icon">
                             <img src="dist/img/pin.svg" alt="Ikona telefonu" class="contact-box__element-icon-img pin">
                         </div>
@@ -346,6 +351,8 @@
             <p class="footer__mobile-author">Projekt i wykonanie: Jakub Romański</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="dist/js/aos.min.js"></script>
     <script src="dist/js/script.min.js"></script>
 </body>
 
