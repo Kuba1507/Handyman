@@ -1,4 +1,5 @@
 @use "colors" as *;
+@use "mixins" as *;
 
 @media (min-width: 768px) {
 	.navbar {
@@ -134,8 +135,7 @@
 
 		.advantages {
 			.wrapper {
-				margin: 0 auto;
-				min-width: (100%, 1200px);
+				@include wrapper;
 
 				.advantages-container {
 					flex-direction: row;
@@ -246,8 +246,7 @@
 	.navbar {
 		.wrapper {
 			align-items: center;
-			margin: 0 auto;
-			width: min(100%, 1200px);
+			@include wrapper;
 
 			.desktop-nav {
 				display: inline-block;
@@ -265,8 +264,7 @@
 
 		.wrapper {
 			align-items: flex-end;
-			margin: 0 auto;
-			width: min(100%, 1200px);
+			@include wrapper;
 			gap: 0;
 
 			.header-box {
@@ -325,8 +323,7 @@
 
 		.advantages {
 			.wrapper {
-				margin: 0 auto;
-				min-width: (100%, 1200px);
+				@include wrapper;
 
 				.advantages-container {
 					.advantage-box {
@@ -362,8 +359,7 @@
 
 		.questions {
 			.wrapper {
-				margin: 0 auto;
-				width: min(100%, 1200px);
+				@include wrapper;
 				justify-content: space-around;
 
 				.questions-text {
@@ -402,8 +398,7 @@
 			}
 
 			.wrapper {
-				margin: 0 auto;
-				width: min(100%, 1200px);
+				@include wrapper;
 
 				.underline {
 					margin: 6em auto;
@@ -432,8 +427,7 @@
 
 		.contact {
 			.wrapper {
-				margin: 0 auto;
-				width: min(100%, 1200px);
+				@include wrapper;
 
 				.contact-box {
 					&__element {
@@ -479,9 +473,8 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				margin: 0 auto;
 				padding: 2em 0 10em 0;
-				width: min(100%, 1200px);
+				@include wrapper;
 				z-index: 50;
 
 				.footer__desktop-logo {
@@ -541,11 +534,7 @@
 			}
 
 			&-shadow {
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
+				@include shadow;
 				background-color: rgba(0, 0, 0, 0.65);
 			}
 		}
@@ -554,8 +543,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			margin: 0 auto;
-			width: min(100%, 1200px);
+			@include wrapper;
 
 			&-company,
 			&-author {

@@ -1,4 +1,5 @@
 @use "colors" as *;
+@use "mixins" as *;
 
 html {
 	font-size: 62.5%;
@@ -30,8 +31,8 @@ body {
 		.logo {
 			display: flex;
 			align-items: center;
-			text-decoration: none;
 			padding: 1em;
+			text-decoration: none;
 
 			&__icon {
 				width: 50px;
@@ -138,8 +139,8 @@ body {
 	min-height: calc(100vh - 82px);
 	min-height: calc(100dvh - 82px);
 	width: 100%;
-	background-color: #2d3137;
 	text-align: center;
+	background-color: #2d3137;
 	transform: translateX(750px);
 	transition: transform 0.4s;
 	z-index: 999;
@@ -228,8 +229,8 @@ body {
 			display: block;
 			margin-top: 6em;
 			padding: 0.6em 1.2em;
-			font-size: 1.8rem;
 			width: 10em;
+			font-size: 1.8rem;
 			font-weight: bold;
 			background-color: $main-orange;
 			border-radius: 20px;
@@ -246,11 +247,7 @@ body {
 	}
 
 	&__shadow {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+		@include shadow;
 		background-color: rgba(0, 0, 0, 0.65);
 	}
 }
@@ -356,10 +353,10 @@ main {
 
 						&-text {
 							margin-top: 0.5em;
-							color: $pure-white;
 							font-weight: 200;
 							font-size: 1.8rem;
 							text-align: center;
+							color: $pure-white;
 						}
 					}
 				}
@@ -369,8 +366,7 @@ main {
 
 	.offers {
 		.wrapper {
-			margin: 0 auto;
-			width: min(100%, 1200px);
+			@include wrapper;
 
 			.offers-box {
 				display: flex;
@@ -503,14 +499,17 @@ main {
 					height: 60px;
 				}
 
-				&__text {
+				&__text,
+				&__number {
 					margin-top: 0.5em;
+				}
+
+				&__text {
 					font-size: 2rem;
 					font-weight: 300;
 				}
 
 				&__number {
-					margin-top: 0.5em;
 					font-size: 2.3rem;
 					font-weight: bold;
 				}
@@ -518,11 +517,7 @@ main {
 		}
 
 		&__shadow {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
+			@include shadow;
 			background-color: rgba(0, 0, 0, 0.65);
 			z-index: 1;
 		}
@@ -564,8 +559,8 @@ main {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
-					padding: 0 0.25em;
 					margin-bottom: 1.75em;
+					padding: 0 0.25em;
 
 					&-name {
 						margin-right: 0.5em;
@@ -657,10 +652,10 @@ main {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+					margin-bottom: 1.75em;
+					padding: 0.25em 0.5em;
 					background-color: $grey;
 					border-radius: 30px;
-					padding: 0.25em 0.5em;
-					margin-bottom: 1.75em;
 					border: none;
 					transition: background-color 0.3s;
 					cursor: pointer;
@@ -710,8 +705,7 @@ main {
 
 	&__desktop,
 	&__mobile {
-		margin: 0 auto;
-		width: min(100%, 1200px);
+		@include wrapper;
 	}
 
 	&__desktop {
