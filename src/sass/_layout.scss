@@ -466,14 +466,14 @@ main {
 			align-items: center;
 			z-index: 5;
 
-			.questions__text {
+			.questions-text {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				text-align: center;
 				color: $pure-white;
 
-				&-heading {
+				&__heading {
 					font-size: 2.6rem;
 				}
 
@@ -485,7 +485,7 @@ main {
 				}
 			}
 
-			.question__call {
+			.question-call {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -503,13 +503,13 @@ main {
 					height: 60px;
 				}
 
-				&-text {
+				&__text {
 					margin-top: 0.5em;
 					font-size: 2rem;
 					font-weight: 300;
 				}
 
-				&-number {
+				&__number {
 					margin-top: 0.5em;
 					font-size: 2.3rem;
 					font-weight: bold;
